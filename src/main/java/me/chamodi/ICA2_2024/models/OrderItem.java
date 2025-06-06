@@ -1,4 +1,4 @@
-package me.chamodi.ICA2_2024.Model;
+package me.chamodi.ICA2_2024.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

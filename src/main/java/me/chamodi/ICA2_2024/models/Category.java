@@ -1,4 +1,4 @@
-package me.chamodi.ICA2_2024.Model;
+package me.chamodi.ICA2_2024.models;
 
 import java.util.List;
 
@@ -8,19 +8,19 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 @Entity
-public class Categorey {
+public class Category {
 	@Id
 	private int id;
 	private String name;
-	@OneToMany(mappedBy = "categorey")
+	@OneToMany(mappedBy = "category")
 	@JsonIgnore
 	private List<Product>products;
 	
-	public Categorey() {
+	public Category() {
 		
 	}
 
-	public Categorey(int id, String name, List<Product> products) {
+	public Category(int id, String name, List<Product> products) {
 		this.id = id;
 		this.name = name;
 		this.products = products;
